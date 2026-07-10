@@ -1,6 +1,6 @@
 const variants = {
   confirmed: 'bg-success-bg text-success-text',
-  pending:   'bg-warning-bg text-warning-text',
+  pending: 'bg-warning-bg text-warning-text',
   completed: 'bg-surface text-slate border border-border',
   cancelled: 'bg-danger-bg text-danger-text',
 }
