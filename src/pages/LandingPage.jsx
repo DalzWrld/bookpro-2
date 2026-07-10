@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Calendar, Shield, ClipboardList, Timer, Play } from 'lucide-react'
 import Navbar from '../components/layout/Navbar'
 import DoctorGrid from '../components/doctor/DoctorGrid'
 
@@ -16,9 +17,9 @@ const DOCTORS = [
 const SPECIALTIES = ['General Practice','Pediatrics','Dentistry','Dermatology','Cardiology']
 
 const FEATURES = [
-  { icon: '⏱', title: 'Book in under 2 minutes', desc: 'Pick a doctor, choose a slot, confirm. No phone calls, no waiting on hold.' },
-  { icon: '🛡', title: 'Verified professionals only', desc: 'Every doctor is licensed and credentialed before joining the platform.' },
-  { icon: '📋', title: 'Your records, in one place', desc: 'Access diagnoses, prescriptions, and follow-up notes from every visit.' },
+  { icon: <Timer size={22} />, title: 'Book in under 2 minutes', desc: 'Pick a doctor, choose a slot, confirm. No phone calls, no waiting on hold.' },
+  { icon: <Shield size={22} />, title: 'Verified professionals only', desc: 'Every doctor is licensed and credentialed before joining the platform.' },
+  { icon: <ClipboardList size={22} />, title: 'Your records, in one place', desc: 'Access diagnoses, prescriptions, and follow-up notes from every visit.' },
 ]
 
 export default function LandingPage() {
@@ -30,7 +31,7 @@ export default function LandingPage() {
       <div className="max-w-[1280px] mx-auto px-15 py-22 grid grid-cols-2 gap-18 items-center">
         <div>
           <span className="inline-flex items-center gap-1.5 bg-teal-light text-teal text-[11px] font-semibold px-3.5 py-1.5 rounded-full mb-5 uppercase tracking-wider">
-            🛡 Verified clinical care
+            <Shield size={16} /> Verified clinical care
           </span>
           <h1 className="font-display font-bold text-[52px] text-navy leading-[1.12] mb-5">
             Book your <em className="italic text-teal">checkup</em><br />in minutes
@@ -43,7 +44,7 @@ export default function LandingPage() {
               Book an appointment
             </Link>
             <a href="#how-it-works" className="text-[14px] font-medium text-navy border border-border-strong px-6 py-3 rounded-lg hover:bg-surface transition-colors flex items-center gap-1.5">
-              ▶ See how it works
+              <Play size={16} /> See how it works
             </a>
           </div>
           <div className="flex gap-9 mt-11 pt-9 border-t border-border">
@@ -64,7 +65,7 @@ export default function LandingPage() {
               <div className="w-10 h-10 rounded-full bg-teal-light flex items-center justify-center text-teal text-[13px] font-semibold flex-shrink-0">{a.initials}</div>
               <div className="flex-1">
                 <p className="text-[13px] font-medium text-navy">{a.name}</p>
-                <p className="text-[11px] text-slate-light mt-0.5">📅 {a.meta}</p>
+                <p className="text-[11px] text-slate-light mt-0.5 flex items-center gap-2.5"><Calendar size={14} /> {a.meta}</p>
               </div>
               <span className={`text-[11px] font-semibold px-2.5 py-1 rounded-full ${a.badgeCls}`}>{a.badge}</span>
             </div>

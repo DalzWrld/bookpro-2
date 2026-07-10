@@ -1,14 +1,15 @@
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext'
+import { LayoutGrid, Calendar, Stethoscope, ClipboardList, User } from 'lucide-react'
 
 const navItems = [
-  { label: 'Dashboard',       to: '/dashboard',    icon: '⊞', end: true },
-  { label: 'Appointments',    to: '/appointments', icon: '📅' },
-  { label: 'Find a doctor',   to: '/doctors',      icon: '🩺' },
-  { label: 'Medical records', to: '/appointments', icon: '📋' },
+  { label: 'Dashboard',       to: '/dashboard',    icon: <LayoutGrid size={18} />, end: true },
+  { label: 'Appointments',    to: '/appointments', icon: <Calendar size={18} /> },
+  { label: 'Find a doctor',   to: '/doctors',      icon: <Stethoscope size={18} /> },
+  { label: 'Medical records', to: '/appointments', icon: <ClipboardList size={18} /> },
 ]
 const accountItems = [
-  { label: 'Profile',  to: '/profile',  icon: '👤' },
+  { label: 'Profile',  to: '/profile',  icon: <User size={18} /> },
 ]
 
 export default function Sidebar() {

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Calendar } from 'lucide-react'
 import StatusBadge from '../shared/StatusBadge'
 
 export default function PastVisitRow({ appointment }) {
@@ -12,7 +13,7 @@ export default function PastVisitRow({ appointment }) {
       </div>
       <div className="flex-1 min-w-0">
         <p className="text-[13px] font-medium text-navy">{doctorName}</p>
-        <p className="text-[11px] text-slate-light mt-0.5">📅 {date} · {specialty}</p>
+        <p className="text-[11px] text-slate-light mt-0.5 flex items-center gap-2.5"><Calendar size={14} /> {date} · {specialty}</p>
       </div>
       <StatusBadge status={status} />
       <Link to={`/appointments/${id}`} className="text-[11px] font-medium text-teal hover:underline ml-2">

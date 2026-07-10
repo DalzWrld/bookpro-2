@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Check } from 'lucide-react'
 import DashboardLayout from '../components/layout/DashboardLayout'
 import Topbar from '../components/layout/Topbar'
 import { useAuth } from '../context/AuthContext'
@@ -45,7 +46,7 @@ export default function ProfilePage() {
           ))}
 
           <button onClick={handleSave} className="w-full mt-2 bg-teal text-white text-[14px] font-semibold py-3.5 rounded-lg hover:bg-teal-mid transition-colors cursor-pointer">
-            {saved ? '✓ Saved!' : 'Save changes'}
+            {saved ? <><Check size={16} /> Saved!</> : 'Save changes'}
           </button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export default function EmptyState({ icon = '📅', title, description, actionLabel, actionTo }) {
+export default function EmptyState({ icon, title, description, actionLabel, actionTo }) {
   return (
     <div className="flex flex-col items-center justify-center py-12 text-center">
       <div className="text-4xl mb-4">{icon}</div>

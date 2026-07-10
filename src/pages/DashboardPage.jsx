@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Calendar, CheckCircle, ClipboardList, Clock, Stethoscope } from 'lucide-react'
 import DashboardLayout from '../components/layout/DashboardLayout'
 import Topbar from '../components/layout/Topbar'
 import AppointmentList from '../components/appointment/AppointmentList'
@@ -31,17 +32,17 @@ export default function DashboardPage() {
           {/* Stats row */}
           <div className="grid grid-cols-3 gap-3.5">
             <div className="bg-teal rounded-lg border border-teal p-5">
-              <div className="w-8 h-8 rounded-lg bg-white/15 flex items-center justify-center mb-3.5">📅</div>
+              <div className="w-8 h-8 rounded-lg bg-white/15 flex items-center justify-center mb-3.5"><Calendar size={20} /></div>
               <p className="font-display font-bold text-[28px] text-white">{upcoming.length}</p>
               <p className="text-[12px] text-white/62 mt-0.5">Upcoming appointments</p>
             </div>
             <div className="bg-card rounded-lg border border-border p-5">
-              <div className="w-8 h-8 rounded-lg bg-teal-light flex items-center justify-center mb-3.5">✅</div>
+              <div className="w-8 h-8 rounded-lg bg-teal-light flex items-center justify-center mb-3.5"><CheckCircle size={20} /></div>
               <p className="font-display font-bold text-[28px] text-navy">4</p>
               <p className="text-[12px] text-slate-light mt-0.5">Completed visits</p>
             </div>
             <div className="bg-card rounded-lg border border-border p-5">
-              <div className="w-8 h-8 rounded-lg bg-teal-light flex items-center justify-center mb-3.5">📋</div>
+              <div className="w-8 h-8 rounded-lg bg-teal-light flex items-center justify-center mb-3.5"><ClipboardList size={20} /></div>
               <p className="font-display font-bold text-[28px] text-navy">3</p>
               <p className="text-[12px] text-slate-light mt-0.5">Medical records</p>
             </div>
@@ -74,9 +75,9 @@ export default function DashboardPage() {
               <p className="text-[10px] font-semibold text-white/62 uppercase tracking-wider mb-2">Next appointment</p>
               <p className="font-display font-semibold text-[16px] text-white mb-1.5">{upcoming[0].doctorName}</p>
               <div className="text-[12px] text-white/70 flex flex-col gap-1">
-                <span>📅 Monday, 14 July 2026</span>
-                <span>🕙 10:00 – 10:30 AM</span>
-                <span>🩺 {upcoming[0].specialty}</span>
+                <span className="flex items-center gap-2"><Calendar size={14} /> Monday, 14 July 2026</span>
+                <span className="flex items-center gap-2"><Clock size={14} /> 10:00 – 10:30 AM</span>
+                <span className="flex items-center gap-2"><Stethoscope size={14} /> {upcoming[0].specialty}</span>
               </div>
               <div className="flex gap-2 mt-3.5">
                 <button onClick={() => handleCancel(upcoming[0].id)} className="flex-1 py-2 rounded-md text-[12px] font-medium text-white cursor-pointer" style={{background:'rgba(255,255,255,0.15)'}}>Cancel</button>

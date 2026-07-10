@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
+import { Briefcase, MapPin, Clock, Check } from 'lucide-react'
 import Navbar from '../components/layout/Navbar'
 import Breadcrumb from '../components/shared/Breadcrumb'
 import SpecialtyBadge from '../components/shared/SpecialtyBadge'
@@ -39,9 +40,9 @@ export default function DoctorProfilePage() {
                 </div>
               </div>
               <div className="flex gap-8 flex-wrap">
-                <span className="flex items-center gap-2 text-[13px] text-slate">💼 {doctor.experience} experience</span>
-                <span className="flex items-center gap-2 text-[13px] text-slate">📍 Nairobi, Kenya</span>
-                <span className="flex items-center gap-2 text-[13px] text-slate">🕐 {doctor.hours}</span>
+                <span className="flex items-center gap-2 text-[13px] text-slate"><Briefcase size={16} /> {doctor.experience} experience</span>
+                <span className="flex items-center gap-2 text-[13px] text-slate"><MapPin size={16} /> Nairobi, Kenya</span>
+                <span className="flex items-center gap-2 text-[13px] text-slate"><Clock size={16} /> {doctor.hours}</span>
                 <span className="flex items-center gap-1.5 text-[12px] font-medium text-teal bg-teal-light px-3 py-1.5 rounded-full ml-auto">
                   <span className="w-1.5 h-1.5 rounded-full bg-teal" />Available today
                 </span>
@@ -57,9 +58,9 @@ export default function DoctorProfilePage() {
               <h2 className="font-display font-semibold text-[18px] text-navy mb-4">Specialties</h2>
               <div className="grid grid-cols-2 gap-2.5">
                 {doctor.specialties.map(s => (
-                  <div key={s} className="flex items-center gap-2.5 text-[13px] text-slate px-3.5 py-2.5 bg-surface rounded-lg border border-border">
-                    <span className="text-teal">✓</span>{s}
-                  </div>
+                   <div key={s} className="flex items-center gap-2.5 text-[13px] text-slate px-3.5 py-2.5 bg-surface rounded-lg border border-border">
+                     <span className="text-teal"><Check size={16} /></span>{s}
+                   </div>
                 ))}
               </div>
             </div>
