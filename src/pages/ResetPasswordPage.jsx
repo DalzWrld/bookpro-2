@@ -4,11 +4,11 @@ import { CheckCircle } from 'lucide-react'
 import AuthForm from '../components/auth/AuthForm'
 
 export default function ResetPasswordPage() {
-  const [email, setEmail]       = useState('')
+  const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [error, setError]       = useState('')
-  const [loading, setLoading]   = useState(false)
-  const [done, setDone]         = useState(false)
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [done, setDone] = useState(false)
 
   const handleSubmit = () => {
     if (!email || !password) { setError('Please fill in all fields.'); return }

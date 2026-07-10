@@ -30,8 +30,8 @@ export default function LoginPage() {
       title="Welcome back"
       subtitle="Log in to your BookPro account"
       fields={[
-        { name:'email',    label:'Email address', type:'email',    placeholder:'you@email.com',  value:email,    onChange:setEmail },
-        { name:'password', label:'Password',      type:'password', placeholder:'Your password',  value:password, onChange:setPassword },
+        { name:'email', label:'Email address', type:'email', placeholder:'you@email.com', value:email, onChange:setEmail },
+        { name:'password', label:'Password', type:'password', placeholder:'Your password', value:password, onChange:setPassword },
       ]}
       submitLabel="Log in"
       onSubmit={handleSubmit}

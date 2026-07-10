@@ -7,10 +7,10 @@ import ErrorMessage from '../components/shared/ErrorMessage'
 
 export default function ProfilePage() {
   const { user } = useAuth()
-  const [name, setName]     = useState(user?.name ?? '')
-  const [email, setEmail]   = useState(user?.email ?? '')
-  const [saved, setSaved]   = useState(false)
-  const [error, setError]   = useState('')
+  const [name, setName] = useState(user?.name ?? '')
+  const [email, setEmail] = useState(user?.email ?? '')
+  const [saved, setSaved] = useState(false)
+  const [error, setError] = useState('')
 
   const handleSave = () => {
     if (!name || !email) { setError('Name and email are required.'); return }

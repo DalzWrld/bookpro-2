@@ -6,12 +6,12 @@ import AuthForm from '../components/auth/AuthForm'
 export default function RegisterPage() {
   const { login } = useAuth()
   const navigate = useNavigate()
-  const [name, setName]         = useState('')
-  const [email, setEmail]       = useState('')
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [confirm, setConfirm]   = useState('')
-  const [error, setError]       = useState('')
-  const [loading, setLoading]   = useState(false)
+  const [confirm, setConfirm] = useState('')
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
   const handleSubmit = () => {
     if (!name || !email || !password) { setError('Please fill in all fields.'); return }
@@ -30,10 +30,10 @@ export default function RegisterPage() {
       title="Create your account"
       subtitle="Start booking appointments in minutes"
       fields={[
-        { name:'name',     label:'Full name',        type:'text',     placeholder:'Your full name',   value:name,     onChange:setName },
-        { name:'email',    label:'Email address',    type:'email',    placeholder:'you@email.com',    value:email,    onChange:setEmail },
-        { name:'password', label:'Password',         type:'password', placeholder:'Create a password',value:password, onChange:setPassword },
-        { name:'confirm',  label:'Confirm password', type:'password', placeholder:'Repeat password',  value:confirm,  onChange:setConfirm },
+        { name:'name', label:'Full name', type:'text', placeholder:'Your full name', value:name, onChange:setName },
+        { name:'email', label:'Email address', type:'email', placeholder:'you@email.com', value:email, onChange:setEmail },
+        { name:'password', label:'Password', type:'password', placeholder:'Create a password', value:password, onChange:setPassword },
+        { name:'confirm', label:'Confirm password', type:'password', placeholder:'Repeat password', value:confirm, onChange:setConfirm },
       ]}
       submitLabel="Create account"
       onSubmit={handleSubmit}
