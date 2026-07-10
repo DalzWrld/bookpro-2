@@ -18,18 +18,18 @@ export default function App() {
     <AuthProvider>
       <Routes>
         {/* Public */}
-        <Route path="/"                   element={<LandingPage />} />
-        <Route path="/login"              element={<LoginPage />} />
-        <Route path="/register"           element={<RegisterPage />} />
-        <Route path="/reset-password"     element={<ResetPasswordPage />} />
-        <Route path="/doctors"            element={<BrowsePage />} />
-        <Route path="/doctors/:id"        element={<DoctorProfilePage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/reset-password" element={<ResetPasswordPage />} />
+        <Route path="/doctors" element={<BrowsePage />} />
+        <Route path="/doctors/:id" element={<DoctorProfilePage />} />
 
         {/* Protected */}
-        <Route path="/dashboard"          element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
-        <Route path="/appointments"       element={<ProtectedRoute><AppointmentsPage /></ProtectedRoute>} />
-        <Route path="/appointments/:id"   element={<ProtectedRoute><AppointmentDetailPage /></ProtectedRoute>} />
-        <Route path="/profile"            element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
+        <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
+        <Route path="/appointments" element={<ProtectedRoute><AppointmentsPage /></ProtectedRoute>} />
+        <Route path="/appointments/:id" element={<ProtectedRoute><AppointmentDetailPage /></ProtectedRoute>} />
+        <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
       </Routes>
     </AuthProvider>
   )
