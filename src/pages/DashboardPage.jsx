@@ -8,13 +8,13 @@ import PastVisitList from '../components/appointment/PastVisitList'
 import StatusBadge from '../components/shared/StatusBadge'
 
 const UPCOMING = [
-  { id: 1, doctorName: 'Dr. Jane Mwangi',  specialty: 'General Practice', date: 'Mon 14 Jul', time: '10:00 AM', status: 'confirmed' },
-  { id: 2, doctorName: 'Dr. Kevin Omondi', specialty: 'Pediatrics',        date: 'Wed 16 Jul', time: '2:00 PM',  status: 'pending' },
+  { id: 1, doctorName: 'Dr. Jane Mwangi', specialty: 'General Practice', date: 'Mon 14 Jul', time: '10:00 AM', status: 'confirmed'},
+  { id: 2, doctorName: 'Dr. Kevin Omondi', specialty: 'Pediatrics', date: 'Wed 16 Jul', time: '2:00 PM', status: 'pending'},
 ]
 const PAST = [
-  { id: 3, doctorName: 'Dr. Amara Patel',  specialty: 'Dermatology',       date: '12 May 2025', status: 'completed' },
-  { id: 4, doctorName: 'Dr. Rita Lee',     specialty: 'General Practice',  date: '3 Apr 2025',  status: 'cancelled' },
-  { id: 5, doctorName: 'Dr. Brian Mutua',  specialty: 'Dentistry',         date: '18 Feb 2025', status: 'completed' },
+  { id: 3, doctorName: 'Dr. Amara Patel', specialty: 'Dermatology', date: '12 May 2025', status: 'completed'},
+  { id: 4, doctorName: 'Dr. Rita Lee', specialty: 'General Practice', date: '3 Apr 2025', status: 'cancelled'},
+  { id: 5, doctorName: 'Dr. Brian Mutua', specialty: 'Dentistry', date: '18 Feb 2025', status: 'completed'},
 ]
 
 export default function DashboardPage() {

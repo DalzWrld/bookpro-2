@@ -4,14 +4,14 @@ import Navbar from '../components/layout/Navbar'
 import DoctorGrid from '../components/doctor/DoctorGrid'
 
 const DOCTORS = [
-  { id: 1, name: 'Dr. Jane Mwangi',  specialty: 'General Practice', location: 'Nairobi', tags: ['Family Medicine','Checkups'],    availability: 'Available today' },
-  { id: 2, name: 'Dr. Kevin Omondi', specialty: 'Pediatrics',        location: 'Nairobi', tags: ['Child Health','Vaccines'],      availability: 'Available Wed' },
-  { id: 3, name: 'Dr. Amara Patel',  specialty: 'Dermatology',       location: 'Nairobi', tags: ['Skin Care','Acne'],            availability: 'Available Fri' },
-  { id: 4, name: 'Dr. Rita Lee',     specialty: 'Cardiology',        location: 'Nairobi', tags: ['Heart Health','ECG'],           availability: 'Available Thu' },
-  { id: 5, name: 'Dr. Brian Mutua',  specialty: 'Dentistry',         location: 'Nairobi', tags: ['Dental Care','Orthodontics'],  availability: 'Available Mon' },
-  { id: 6, name: 'Dr. Sarah Wanjiku',specialty: 'General Practice',  location: 'Nairobi', tags: ['Checkups','Nutrition'],        availability: 'Available Tue' },
-  { id: 7, name: 'Dr. David Otieno', specialty: 'Pediatrics',        location: 'Nairobi', tags: ['Child Health','Growth'],       availability: 'Available Wed' },
-  { id: 8, name: 'Dr. Nancy Kamau',  specialty: 'Dermatology',       location: 'Nairobi', tags: ['Skin Care','Allergies'],      availability: 'Available Fri' },
+  { id: 1, name: 'Dr. Jane Mwangi',  specialty: 'General Practice', location: 'Nairobi', tags: ['Family Medicine','Checkups'], availability: 'Available today' },
+  { id: 2, name: 'Dr. Kevin Omondi', specialty: 'Pediatrics', location: 'Nairobi', tags: ['Child Health','Vaccines'], availability: 'Available Wed' },
+  { id: 3, name: 'Dr. Amara Patel',  specialty: 'Dermatology', location: 'Nairobi', tags: ['Skin Care','Acne'], availability: 'Available Fri' },
+  { id: 4, name: 'Dr. Rita Lee', specialty: 'Cardiology', location: 'Nairobi', tags: ['Heart Health','ECG'], availability: 'Available Thu' },
+  { id: 5, name: 'Dr. Brian Mutua', specialty: 'Dentistry', location: 'Nairobi', tags: ['Dental Care','Orthodontics'],  availability: 'Available Mon' },
+  { id: 6, name: 'Dr. Sarah Wanjiku',specialty: 'General Practice',  location: 'Nairobi', tags: ['Checkups','Nutrition'], availability: 'Available Tue' },
+  { id: 7, name: 'Dr. David Otieno', specialty: 'Pediatrics', location: 'Nairobi', tags: ['Child Health','Growth'], availability: 'Available Wed' },
+  { id: 8, name: 'Dr. Nancy Kamau', specialty: 'Dermatology', location: 'Nairobi', tags: ['Skin Care','Allergies'], availability: 'Available Fri' },
 ]
 
 const SPECIALTIES = ['General Practice','Pediatrics','Dentistry','Dermatology','Cardiology']
